@@ -9,10 +9,64 @@ a {
 }
 
 ul {
+    margin: 0;
+    padding-left: 0;
     list-style-type: none;
 }
 
+h1, h2, h3, p {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+.container:not(.header-container, .footer) {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    max-width: 1440px;
+    padding-left: 156px;
+    padding-right: 156px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+section {
+    padding-top: 112px;
+    padding-bottom: 120px;
+}
+
 /* Header */
+
+.header-container {
+    max-width: 1440px;
+    padding-left: 156px;
+    padding-right: 156px;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container nav {
+    display: flex;
+    gap: 76px;
+    align-items: center;
+}
+
+.header-container nav ul {
+    display: flex;
+    gap: 40px;
+}
+
+.address ul {
+    display: flex;
+    gap: 40px;
+    padding: 24px 0;
+}
 
 .logo {
     font-family: "Raleway", sans-serif;
@@ -62,8 +116,17 @@ ul {
 
 /* Hero Area */
 
-.hero {
+.hero-container {
     background-color: #2e2f42;
+}
+
+.hero {
+    padding: 188px 316px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-heading {
@@ -76,6 +139,12 @@ ul {
 }
 
 .btn {
+    display: flex;
+    align-items: center;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     color: #fff;
     font-weight: 500;
     font-size: 16px;
@@ -90,7 +159,18 @@ ul {
     background-color: #404bbf;
 }
 
-/* Section headings and paragraphs*/
+/* Section headings, paragraphs and containers */
+
+.benefits-section ul {
+    display: flex;
+    gap: 24px;
+}
+
+.benefits-section ul li{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 
 .section-heading {
     font-weight: 700;
@@ -108,6 +188,7 @@ ul {
 
 .card-heading,
 .our-team-card-heading {
+    margin: 32px 0 8px 0;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -121,6 +202,7 @@ ul {
 
 .card-text,
 .our-team-card-text {
+    margin-bottom: 32px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -134,6 +216,29 @@ ul {
 
 .team-section {
     background-color: #f4f4fd;
+}
+
+.team-section ul {
+    display: flex;
+    gap: 23px;
+}
+
+.team-section ul li {
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-section ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.portfolio-section ul li {
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
 }
 
 /* Footer */

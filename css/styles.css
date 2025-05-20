@@ -27,10 +27,8 @@ img {
 
 .container {
     max-width: 1158px;
-    /* padding-left: ;
-    padding-right: ;  */
-    margin-left: 156px;
-    margin-right: 156px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 /* TODO .visually-hidden */
@@ -56,14 +54,12 @@ img {
 }
 
 .header-container {
-    width: 1158px;
     display: flex;
-    margin: 0 auto;
-    padding: 0 15px;
     justify-content: space-between;
 }
 
-.logo {
+.logo-header,
+.logo-footer {
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     font-weight: 700;
@@ -71,6 +67,9 @@ img {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+}
+
+.logo-header {
     margin-right: 76px;
 }
 
@@ -95,10 +94,7 @@ img {
     letter-spacing: 0.02em;
     color: #2e2f42;
     padding: 24px 0;
-}
-
-.nav-list-item {
-    padding: 24px 0;
+    display: block;
 }
 
 .nav-link:hover,
@@ -123,6 +119,8 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    padding: 24px 0;
+    display: block;
 }
 
 .address-link:hover,
@@ -183,8 +181,6 @@ img {
 }
 
 .benefits-card {
-    display: flex;
-    flex-direction: column;
     gap: 8px;
     width: calc((100% - 72px) / 4);
 }
@@ -200,9 +196,6 @@ img {
 }
 
 .card-info {
-    display: flex;
-    flex-direction: column;
-    /* gap: 8px; */
     padding: 32px 0;
 }
 
@@ -219,7 +212,6 @@ img {
 }
 
 .card {
-    width: calc((100% - 72px) / 4);
     background-color: #fff;
     border-radius: 0 0 4px 4px;
     width: calc((100% - 72px) / 4);
@@ -269,9 +261,6 @@ img {
 }
 
 .portfolio-card-info {
-    display: flex;
-    flex-direction: column;
-    /* gap: 8px; */
     padding: 32px 16px;
     border-bottom: 1px solid #e7e9fc;
     border-left: 1px solid #e7e9fc;
@@ -284,7 +273,7 @@ img {
     padding: 100px 0;
 }
 
-.footer .logo {
+.logo-footer {
     display: inline-block;
     margin-bottom: 16px;
 }
